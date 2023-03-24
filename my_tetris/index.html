@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <title>My Tetris</title>
+  
+</head>
+
+<body> 
+  <div class="flex-grid">
+
+    <div class="col">
+      <canvas id="board" class="game-board"></canvas>
+    </div>
+
+    <div class="col">
+        <h3>Author:<br> Mirhojiyeva Malika</h3>
+      <h1>TETRIS</h1>
+      <canvas id="next" class="next"></canvas>
+      <div class="info">
+        <p>Score: <span id="score">0</span></p>
+        <p>Lines: <span id="lines">0</span></p>
+        <p>Level: <span id="level">0</span></p>
+      </div>  
+      <button onclick="start_game()" class="play-button">START</button>
+            
+    </div>
+
+    <div class="col">
+      <div>
+        <div><br><br>
+          CONTROLS: <br><Br>
+           <div><i class="uil uil-arrow-up" width="30" height="30">  ROTATE</i></div><br>
+           <div><i class="uil uil-arrow-left" width="30" height="30">  LEFT</i></div><br>
+           <div><i class="uil uil-arrow-right" width="30" height="30">  RIGHT</i></div><br>
+           <div><i class="uil uil-arrow-down" width="30" height="30">  DOWN</i></div><br>
+           <div><i class="uil uil-parking-circle" width="30" height="30"> PAUSE</i></div><br>
+           <div><i class="uil uil-space-key" width="30" height="30">  HARD DROP</i></div><br>
+           <div ><img src="https://img.icons8.com/ios/500/esc.png" width="40" height="30" class="image"><span class="esc">  END GAME</span> </div>
+       </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript" src="constant.js"></script>
+  <script type="text/javascript" src="board.js"></script>
+  <script type="text/javascript" src="piece.js"></script>
+  <script type="text/javascript" src="my_tetris.js"></script>   
+</body>
+</html>
